@@ -55,8 +55,8 @@ export default function About() {
             </p>
 
             <p className={styles.bodyPara}>
-              Currently engineering web modules and optimizing backend workflows at{" "}
-              <strong>Infeanet Digital Solution and Web Media</strong> in Pune. When I&apos;m not
+              Currently engineering web modules and optimizing backend workflows as a {" "}
+              <strong>Freelancer</strong>. When I&apos;m not
               writing TypeScript or tuning database indices, I study cybersecurity attack vectors,
               dissect OWASP guidelines, and build open-source tools.
             </p>
