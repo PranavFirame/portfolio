@@ -57,7 +57,7 @@ export default function Footer() {
               <a href="mailto:pranavfirame06@gmail.com">
                 pranavfirame06@gmail.com ↗
               </a>
-              <a href="/resume.pdf" download>
+              <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume.pdf`} download>
                 Download Résumé (PDF) ↓
               </a>
             </div>

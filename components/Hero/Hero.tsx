@@ -89,7 +89,7 @@ export default function Hero() {
       {/* Real Audio Element for Arctic Monkeys - Do I Wanna Know? */}
       <audio
         ref={audioRef}
-        src="/audio/do-i-wanna-know.mp3"
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/audio/do-i-wanna-know.mp3`}
         preload="metadata"
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}
@@ -145,7 +145,7 @@ export default function Hero() {
             </svg>
           </a>
 
-          <a href="/resume.pdf" download className={styles.secondaryCta}>
+          <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume.pdf`} download className={styles.secondaryCta}>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
               <polyline points="7 10 12 15 17 10" />

@@ -107,7 +107,7 @@ export default function Contact() {
                   <span>GitHub ↗</span>
                 </a>
                 <a
-                  href="/resume.pdf"
+                  href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume.pdf`}
                   download
                   className={styles.socialBtn}
                 >

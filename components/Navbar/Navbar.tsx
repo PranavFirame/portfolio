@@ -48,7 +48,7 @@ export default function Navbar() {
 
         <div className={styles.navRight}>
           <a
-            href="/resume.pdf"
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume.pdf`}
             download
             className={styles.resumeBtn}
             title="Download Pranav Firame's Resume"
