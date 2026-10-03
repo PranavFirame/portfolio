@@ -1,0 +1,492 @@
+.section {
+  padding: 8rem 1.5rem;
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.lead {
+  font-family: var(--font-body);
+  font-size: 1.12rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Experience Card */
+.experienceCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 28px;
+  padding: 3rem 3.5rem;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.experienceCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-float);
+}
+
+.timelineStem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24px;
+  flex-shrink: 0;
+}
+
+.timelineNode {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(229, 169, 60, 0.2);
+  border: 2px solid var(--accent-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.nodeCore {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+}
+
+.stemLine {
+  flex: 1;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent-gold), rgba(24, 24, 27, 0.08));
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.expContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.expHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.companyBadge {
+  font-family: var(--font-code);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-gold);
+  display: inline-block;
+  margin-bottom: 0.35rem;
+}
+
+.roleTitle {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+
+.companyName {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.location {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.periodBadge {
+  font-family: var(--font-code);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-main);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.bulletList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.bulletIcon {
+  color: var(--accent-gold);
+  font-size: 1.15rem;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.bulletItem strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.techTagsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.techChip {
+  font-family: var(--font-code);
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  background: var(--bg-color);
+  border: 1px solid var(--border-light);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+}
+
+/* Interactive Retro Terminal Widget (Vaibhav Verma signature) */
+.terminalWidget {
+  width: 100%;
+}
+
+.terminalFrame {
+  background: var(--dark-bg);
+  border: 1px solid var(--dark-border);
+  border-radius: 24px;
+  box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.terminalBezel {
+  background: #1C1C20;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.terminalControls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ctrlClose,
+.ctrlMin,
+.ctrlMax {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.ctrlClose {
+  background: #FF5F56;
+}
+.ctrlMin {
+  background: #FFBD2E;
+}
+.ctrlMax {
+  background: #27C93F;
+}
+
+.terminalTabs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tabBtn {
+  font-family: var(--font-code);
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--dark-text-muted);
+  background: transparent;
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+}
+
+.tabBtn:hover {
+  color: var(--dark-text);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tabBtnActive {
+  color: #FFFFFF !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
+.terminalPwr {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-code);
+  font-size: 0.68rem;
+  color: #10B981;
+  font-weight: 600;
+}
+
+.pwrLed {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 8px #10B981;
+}
+
+.screenBody {
+  padding: 2rem;
+  min-height: 300px;
+  background: #111114;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Scanline subtle CRT effect */
+.screenBody::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.25));
+  background-size: 100% 4px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* CLI view */
+.cliContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  z-index: 2;
+}
+
+.cliLogs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+}
+
+.cliUserCmd {
+  color: #F4D24A;
+  font-weight: 600;
+}
+
+.cliOutput {
+  color: #D4D4D8;
+  line-height: 1.6;
+}
+
+.cliInputLine {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+}
+
+.cliPrompt {
+  font-family: var(--font-code);
+  font-size: 0.82rem;
+  color: #10B981;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cliInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.quickCommands {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-code);
+  font-size: 0.72rem;
+  color: #71717A;
+  flex-wrap: wrap;
+}
+
+.quickCmdBtn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #A1A1AA;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  transition: all 0.15s ease;
+}
+
+.quickCmdBtn:hover {
+  background: #F4D24A;
+  color: #111;
+  border-color: #F4D24A;
+}
+
+/* Security Checklist */
+.checklistGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  position: relative;
+  z-index: 2;
+}
+
+.checklistItem {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.checkHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.checkStatus {
+  font-family: var(--font-code);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #10B981;
+  background: rgba(16, 185, 129, 0.12);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.checkName {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #F4F4F5;
+}
+
+.checkNote {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: #A1A1AA;
+  line-height: 1.4;
+}
+
+/* Philosophy */
+.philosophyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.philosophyCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.philosophyCard h4 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #F4D24A;
+  margin-bottom: 0.5rem;
+}
+
+.philosophyCard p {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: #D4D4D8;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .experienceCard {
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .timelineStem {
+    display: none;
+  }
+
+  .checklistGrid,
+  .philosophyGrid {
+    grid-template-columns: 1fr;
+  }
+}
