@@ -23,23 +23,23 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: "taskflow",
-    name: "TaskFlow",
-    badge: "Fullstack & Real-Time",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-    title: "Real-time collaborative project workspace with zero-latency synchronization.",
-    desc: "Engineered a low-latency Kanban workspace for distributed engineering teams. Architected bi-directional WebSocket pipelines with conflict resolution, role-based access control, and instant task telemetry.",
+    id: "wanderlust",
+    name: "Wanderlust",
+    badge: "Fullstack & Cloud",
+    tags: ["Node.js", "Express", "MongoDB", "Cloudinary"],
+    title: "Secure Luxury Lounges & Cafes listing platform.",
+    desc: "Secure Luxury Lounges & Cafes listing engineered with robust user authentication, role-based permissions, dynamic reviews, and cloud database integration.",
     metrics: [
-      { value: "<45ms", label: "WebSocket broadcast latency across clients" },
-      { value: "100%", label: "Real-time state consistency without refresh" },
+      { value: "100%", label: "Secure authenticated listing & review pipeline" },
+      { value: "Sub-second", label: "Listing query response & cloud asset delivery" },
     ],
-    tech: ["React", "Node.js", "Express", "Socket.io", "MongoDB"],
-    mockupIcon: "⚡",
+    tech: ["Node.js", "Express", "MongoDB", "EJS", "Render"],
+    mockupIcon: "🛋️",
     accentColor: "#4338CA",
     accentBg: "linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%)",
-    floats: ["📋", "💬", "⚡"],
-    githubUrl: "https://github.com/PranavFirame",
-    demoUrl: "#",
+    floats: ["☕", "🛋️", "⭐"],
+    githubUrl: "https://github.com/PranavFirame/Wanderlust",
+    demoUrl: "https://wanderlust-c72u.onrender.com/listings",
   },
   {
     id: "cloudvault",
@@ -217,6 +217,8 @@ export default function Projects() {
                   <a
                     href={project.demoUrl}
                     className={styles.secondaryLink}
+                    target={project.demoUrl.startsWith("http") ? "_blank" : undefined}
+                    rel={project.demoUrl.startsWith("http") ? "noreferrer" : undefined}
                   >
                     <span>Live Preview ↗</span>
                   </a>
