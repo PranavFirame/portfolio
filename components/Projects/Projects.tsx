@@ -57,7 +57,7 @@ const projects: Project[] = [
     accentColor: "#059669",
     accentBg: "linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%)",
     floats: ["🔒", "☁️", "🛡️"],
-    githubUrl: "https://github.com/PranavFirame",
+    githubUrl: "https://github.com/PranavFirame/CLOUDVAULT",
     demoUrl: "#",
   },
   {
@@ -95,7 +95,7 @@ const projects: Project[] = [
     accentColor: "#D97706",
     accentBg: "linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%)",
     floats: ["🔍", "📈", "🛡️"],
-    githubUrl: "https://github.com/PranavFirame",
+    githubUrl: "https://github.com/PranavFirame/SentinelSec",
     demoUrl: "#",
   },
 ];
