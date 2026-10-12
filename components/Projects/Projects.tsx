@@ -96,7 +96,7 @@ const projects: Project[] = [
     accentBg: "linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%)",
     floats: ["🔍", "📈", "🛡️"],
     githubUrl: "https://github.com/PranavFirame/SentinelSec",
-    demoUrl: "#",
+    demoUrl: "https://sentinelsec-frontend-rzim.onrender.com/",
   },
 ];
 
