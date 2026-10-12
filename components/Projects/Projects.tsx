@@ -76,8 +76,8 @@ const projects: Project[] = [
     accentColor: "#E11D48",
     accentBg: "linear-gradient(135deg, #FFF1F2 0%, #FFE4E6 100%)",
     floats: ["💻", "🚀", "✨"],
-    githubUrl: "https://github.com/PranavFirame",
-    demoUrl: "#",
+    githubUrl: "https://github.com/PranavFirame/DevConnect",
+    demoUrl: "https://dev-connect-pranavfirame.vercel.app/",
   },
   {
     id: "sentinelsec",
