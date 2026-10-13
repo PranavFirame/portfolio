@@ -58,7 +58,7 @@ const projects: Project[] = [
     accentBg: "linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%)",
     floats: ["🔒", "☁️", "🛡️"],
     githubUrl: "https://github.com/PranavFirame/CLOUDVAULT",
-    demoUrl: "#",
+    demoUrl: "https://cloudvault-8bqj.onrender.com/",
   },
   {
     id: "devconnect",
