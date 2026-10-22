@@ -23,6 +23,25 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: "issuepilot",
+    name: "IssuePilot",
+    badge: "AI & Developer Intelligence",
+    tags: ["Next.js 15", "TypeScript", "React 19", "Prisma", "Vitest"],
+    title: "AI-Powered GitHub Issue Triage and Repository Intelligence Platform.",
+    desc: "Engineered an intelligent developer platform analyzing public GitHub repositories, calculating multi-factor health scores, detecting duplicate issues via deterministic NLP, and isolating guest sessions with cryptographically verified cookies.",
+    metrics: [
+      { value: "A+ to F", label: "Multi-factor repository health scoring engine" },
+      { value: "Zero-Leak", label: "Cryptographically isolated guest identity sessions" },
+    ],
+    tech: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Prisma", "Vitest"],
+    mockupIcon: "🧭",
+    accentColor: "#7C3AED",
+    accentBg: "linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%)",
+    floats: ["🧭", "🤖", "⚡"],
+    githubUrl: "https://github.com/PranavFirame/IssuePilot",
+    demoUrl: "https://issue-pilot-one.vercel.app/",
+  },
+  {
     id: "wanderlust",
     name: "Wanderlust",
     badge: "Fullstack & Cloud",
